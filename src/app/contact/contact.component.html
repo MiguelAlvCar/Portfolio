@@ -1,0 +1,80 @@
+<div class="container-lg">
+
+    <div class="mac-box bg-dark mt-3 red-border rounded mac-shadow px-0 w-100 pb-3">
+        <form novalidate (ngSubmit)="sendMessage(form)" #form="ngForm">
+
+            <div class="row mx-0">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 px-4 mt-4">
+                    <input class="form-control " type="text" placeholder="Name / Firma" name="Name" [(ngModel)]="message.Name" required>
+                    <pjm-show-error text="Name" path="Name"></pjm-show-error>
+                </div>
+                
+                <div class="col-md-6 px-4 mt-4">
+                    <input class="form-control" type="text" placeholder="Email" name="Email" [(ngModel)]="message.Email" email required>        
+                    <pjm-show-error text="Email" path="Email"></pjm-show-error>        
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+    
+            <div class="row mx-0">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 px-4">
+                    <textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="7" placeholder="Nachricht" name="Message" 
+                        [(ngModel)]="message.Message" required></textarea>
+                    <pjm-show-error text="Nachricht" path="Message"></pjm-show-error>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+    
+            <div class="d-flex flex-row justify-content-end mt-3">
+                <div *ngIf="messageSend" class="alert alert-success mx-4 mb-0" role="alert">
+                    Vielen Dank für Ihre Nachricht. Sie wurde erfolgreich geschickt.
+                </div>
+                <div *ngIf="sendingMessage" class="spinner-border text-success" role="status">
+                    <span class="sr-only">Sending...</span>
+                  </div>
+                <button type="submit" [disabled]="!form.valid || sendingMessage" class="btn mac-btn-blue mx-4" style="font-size: 20px;">
+                    Nachricht senden
+                </button>
+                
+            </div>
+
+        </form>
+    </div>
+
+    <div class="mac-box bg-dark red-border rounded mac-shadow  mt-3 px-0 w-100  px-4">
+
+        <div class="d-flex flex-row justify-content-between flex-wrap">
+            <div class="d-flex flex-row flex-wrap my-2">
+                <a role="button" class="mac-btn-blue mac-circle mx-2" href="https://github.com/MiguelAlvCar" target="_blank">
+                    <i class='fab fa-github' ></i>
+                </a>
+                <a role="button" class="mac-btn-blue mac-circle mx-2" href="https://www.linkedin.com/in/miguel-alvarez-softwarearchitekt/" target="_blank">
+                    <i class='fab fa-linkedin-in' style="font-size: 36px;"></i>
+                </a>
+                
+            </div>
+            <div class="d-flex flex-row flex-wrap justify-content-end mb-2">    
+                <div class="row mt-2 mx-2">
+                    <a role="button" class="mac-btn-blue mac-circle mr-2" href="mailto:miguel.arbeit@gmail.com" target="_blank">
+                        <i class='fas fa-envelope' style="font-size: 36px;"></i>
+                    </a>
+                    <div class="mt-3">
+                        miguel.arbeit@gmail.com
+                    </div>
+                </div>            
+                
+                <div class="row mt-2 px-0 mx-2">
+                    <div class="mac-circle-div mr-2" >
+                        <i class='fas fa-phone' style="font-size: 36px;"></i>
+                    </div>
+                    <div class="mt-3">
+                        (00 49) 0160 5161 030
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+    </div>
+</div>

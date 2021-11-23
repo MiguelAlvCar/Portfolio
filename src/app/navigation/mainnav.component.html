@@ -1,0 +1,55 @@
+
+<div class="whole-space-overflow mac-bg-grey">
+
+  <div class="bg-white">
+    <div class="container d-none d-lg-block mx-0 w-100" >
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <h4 class="mt-3">Miguel<b style="color: black;">Alvarez</b></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10 ">
+          <h4 class="ml-5 pl-5 mb-3">Full Stack Entwickler</h4>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  
+  <div class="mac-sticky pb-2 site-color mac-shadow" style="z-index:1020">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!--<span class="navbar-brand d-lg-none">Miguel Alvarez, Software Architekt</span>-->
+        <div class="ml-0 d-lg-none row mac-fontwhite mb-1">
+          <div class="pl-0 pr-2 col" style="white-space: nowrap;">Miguel Alvarez,</div>
+          <div class="col pl-0 pr-2" style="white-space: nowrap;">Full Stack Entwickler</div>        
+        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+  
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/projects'>Projekte</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/skills'>Skills</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/cv'>Lebenslauf</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/contact'>Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>
+ 

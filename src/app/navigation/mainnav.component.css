@@ -1,0 +1,15 @@
+nav {
+    font-size: 25px;
+}
+
+.nav-item{
+  margin-inline: 10px;
+}
+
+.navbar-brand{
+    font-size: 20px;
+}
+
+h4{
+    font-family: Helvetica, Arial, sans-serif;
+}

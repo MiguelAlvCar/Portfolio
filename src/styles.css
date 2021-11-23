@@ -1,0 +1,25 @@
+body {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+
+.h100w100{
+	height: 100%;
+	width: 100%;
+}
+
+.h100{
+	height: 100%;
+}
+
+.w100{
+	width: 100%;
+}
+
+
+
+

@@ -1,0 +1,43 @@
+
+.whole-height  {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.whole-space {
+    flex: 1;
+    position: relative;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+.whole-space-if-needed {
+    position: relative;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.whole-space-overflow{
+	flex: 1; 
+	position: relative; 
+	top:0; 
+	bottom: 0; 
+	right: 0; 
+	left: 0; 
+	display: flex; 
+	flex-flow: column;
+	overflow: visible;
+}
+
+.mac-contents{
+    display: contents;
+}

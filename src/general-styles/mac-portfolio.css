@@ -1,0 +1,132 @@
+
+.red-border{
+	border-color: #962020;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.site-color{
+	background-color: #962020;
+}
+
+.mac-bg-grey{
+	background-color: #5c5c5c;
+}
+
+b{
+	color:#dd5c5c;
+}
+
+li.none{
+	list-style-type: none;
+}
+li.li-1{
+	list-style-image: url('/assets/li1.gif');
+}
+li.li-2{
+	list-style-image: url('/assets/li2.gif');
+}
+li.li-3{
+	list-style-image: url('/assets/li3.gif');
+}
+
+.mac-shadow{
+	box-shadow: 6px 4px 10px rgb(34, 34, 34);
+
+}
+
+.mac-fontwhite{
+	font-size: 20px;
+	color: white;
+}
+
+.mac-box{
+	color: white;
+	min-width: 220px;
+}
+
+.mac-btn{
+	color: white;
+	margin-inline: 0px;
+}
+
+.mac-btn.box{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.mac-btn.secun{
+	font-size: 20px;
+	max-width: 450px;
+}
+
+.mac-btn:hover{
+	background-color: #434747;
+	color: white;
+}
+
+.mac-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.mac-head{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.mac-btn-blue{
+	color: white;
+	margin-inline: 0px;
+	background-color: #211ea3;
+}
+
+.mac-btn-blue:hover{
+	background-color: #2e2bd3;
+	color: white;
+}
+
+.mac-btn-blue:disabled{
+	background-color: #05051b;
+	color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bold;
+  	content: '>';
+  	font-size: 50px;
+  	color: #990000;
+}
+.carousel-control-prev-icon:after {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bold;
+  	content: '<';
+  	font-size: 50px;
+  	color:  #990000;
+}
+
+.carousel-indicators li {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bold;
+	content: '_';
+	font-size: 170px;
+	background-color: #990000;
+	background-image: none;
+	width: 40px;
+	height: 4px;
+}
+
+.carousel-image{
+	background-repeat: no-repeat;
+	background-size: contain; 
+	background-position: center;
+}
